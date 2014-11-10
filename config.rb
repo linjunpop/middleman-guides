@@ -3,11 +3,8 @@ require "builder"
 set :layout, :article
 
 activate :livereload
-
 activate :i18n
-
 activate :directory_indexes
-
 activate :autoprefixer
 
 set :markdown, :tables => true, :autolink => true, :gh_blockcode => true, :fenced_code_blocks => true, :with_toc_data => true
@@ -20,4 +17,10 @@ end
 configure :build do
   activate :minify_css
   activate :minify_javascript
+end
+
+helpers do
+  def active_page(path)
+    current_page.path == path ? {:class => "active"} : {}
+  end
 end

@@ -38,3 +38,7 @@ a.cta-link {
     color: $base-accent-color;
   }
 }
+
+.active {
+  border-left: 3px solid $saturated-blue;
+}

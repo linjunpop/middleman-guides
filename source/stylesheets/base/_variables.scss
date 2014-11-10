@@ -54,7 +54,7 @@ $saturated-blue: #4280CA;
 $washed-out-gray: #F9F9F8;
 
 // Font Colors
-$base-font-color: $slate-gray;
+$base-font-color: darken($slate-gray, 8);
 $base-accent-color: $golden-yellow;
 $secondary-accent-color: $saturated-blue;
 
